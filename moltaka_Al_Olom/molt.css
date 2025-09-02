@@ -1,0 +1,245 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Hide unwanted horizontal scroll */
+}
+
+
+
+body{
+    background-color: #817043;
+    direction: rtl ;
+    unicode-bidi: bidi-override;
+    font-family: "Alexandria", sans-serif;
+    width: 100%;
+}
+
+#firstpage{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("images/background.jpg");
+    background-size: cover;
+    display: block;
+}
+
+
+
+nav{
+  top:5px;
+  background-color: #c6a324;
+  height: 60px; 
+  position: fixed ;
+  right: 20px;  
+  width: 97%;
+  border: #876b07b2 solid;
+  border-radius: 10px;
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  justify-items: center;
+  z-index: 1000;
+}
+
+.list {
+  list-style-type: none;
+ 
+  
+  
+}
+ li{   
+    direction: rtl ;
+    unicode-bidi: bidi-override;
+    list-style-type: none;
+    display: inline;
+    color: #000000;
+    text-align: center;
+    padding: 14px 50px;
+    border-bottom: #c6a324 solid 5px;
+    font-family: "Alexandria", sans-serif;
+    transition: text-decoration-color 0.5s;
+    font-weight: 900px;
+    font-size: 16px;
+    transition:border-bottom 0.5s ;
+    
+    
+ }
+
+ li:hover{   
+    border-bottom: #000000 solid 5px;
+    cursor: pointer;
+    transform: translateY(20%);
+   
+ }
+
+ .logo{
+    height:40px;
+    width: 40px;
+    position: relative;
+    left: 30px;
+    top: 10px;
+    
+ }
+
+ .title{
+    position: relative;
+    top: 6cm;
+    right: 5cm;
+ }
+ .title .main{
+font-size: 60px;
+font-family: "Alexandria", sans-serif;
+color: #f6c629;
+text-shadow: #000000 5px 5px ;
+background-color: #876b07b2;
+  height: 100px;
+  padding-top: 20px;
+  padding-right: 10px;
+  width: fit-content;
+  padding-right: 1cm;
+  padding-left: 1cm;
+  
+   
+ }
+
+ .title .sub{
+  font-size: 30px;
+  font-family: "Alexandria", sans-serif;
+  padding-right: 1cm;
+  padding-left: 1cm;  
+  color: #f6c629f6;
+  text-align: center;
+  text-shadow: #000000 5px 5px ;
+  background-color: #876b07b2;
+  height: 50px;
+  padding-top: 10px;
+  width: fit-content;
+  position: absolute;
+  left:10cm;
+  
+ }
+
+ .secondpage{
+   width: 100%;
+  height: auto; /* adjust to content or use min-height: 100vh if you want full screen */
+  display: flex;
+  flex-direction: column;
+  padding: 30px ;
+  gap: 50px; /* spacing between image and text */
+  flex-wrap: wrap;
+  position: relative; 
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(images/sciencebackjpg.jpg);
+  
+  background-size: cover;
+ }
+ .secondpage .ele2{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+   
+   
+ }
+
+ 
+ 
+ .secondpage img{
+  width: auto;
+  height: 500px;
+  padding-right: 250px;
+  border-radius: 20px;
+  
+
+ }
+  .pTitle{
+   position: relative;
+   top: 20px;
+   right: 2cm;
+   font-size: 80px;
+   color: blanchedalmond;
+   
+ }
+
+ .paragraph{
+   font-family: 'Alexandria', sans-serif;
+    line-height: 40px;
+     background-color: blanchedalmond; 
+     padding: 20px;
+     border: 5px solid blanchedalmond;
+     border-radius: 20px;
+     transition: border-color ;
+     transition:  background-color 0.3s ease;
+ }
+
+ .paragraph:hover{
+   border-color: blanchedalmond;
+   background-color:rgb(182, 145, 100) ;
+   color: blanchedalmond;
+ }
+
+.thirdpage{
+width: 100%;
+height: 100vh;
+position: relative;
+background-size: cover;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(images/sciencebackjpg.jpg);
+
+ }
+
+ .thirdpage .generalmembers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: blanchedalmond;
+  border: blanchedalmond solid 5px;
+  font-size: 30px;
+  
+  width: 800px;
+  height: 200px;
+  margin-right: 23%;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 20PX;
+
+  
+  
+ }
+ #mbr{
+  background-color: blanchedalmond;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  border-radius: 40px;
+  margin-top: 20px;
+ }
+ #mbr #name{
+background-color: #817043;
+padding: 4px 15px;
+border-radius: 20px;
+color: blanchedalmond;
+ }
+ #mbr img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  
+ }
+ .dirct{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 80px;
+ }
+
+ 
+
